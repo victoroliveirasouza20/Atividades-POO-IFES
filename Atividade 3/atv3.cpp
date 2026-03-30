@@ -131,10 +131,6 @@ int main() {
     c2.exibirResumo();
     cout << "\n";
  
-    // Exemplos de erro (descomente para testar)
-    // SensorNivel erro1("SensorErro", 100.0, 0.0, 50.0);
-    // Bomba erro2("BombaErro", 150.0);
-    // ControladorTanque erro3("ControladorErro", 50.0, -1.0);
  
     return 0;
 }
