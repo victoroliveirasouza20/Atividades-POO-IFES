@@ -11,5 +11,12 @@ double media(const vector<double>& valores) {
 int main() {
     vector<double> leituras = {21.1, 22.4, 23.0, 21.8};
     cout << "Media C++: " << media(leituras) << endl;
+
+    // NOVA FUNCIONALIDADE (log de data/hora)
+    time_t agora = time(0);
+    char* dt = ctime(&agora);
+
+    cout << "Processado em: " << dt << endl;
+
     return 0;
 }

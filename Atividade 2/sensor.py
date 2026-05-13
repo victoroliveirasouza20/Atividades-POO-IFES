@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def media(valores):
     if not valores:
         return 0.0
@@ -6,3 +8,7 @@ def media(valores):
 if __name__ == "__main__":
     leituras = [21.1, 22.4, 23.0, 21.8]
     print(f"Media Python: {media(leituras):.2f}")
+
+    # Log de data e hora
+    agora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Resultado processado em: {agora}")
